@@ -10,6 +10,12 @@ body {
 
 /* General & 'Reset' Stuff */
 
+.articles {
+  width: 95%;
+  max-width: 920px;
+  margin: auto;
+}
+
 .container {
   width: 90%;
   max-width: 600px;
@@ -37,10 +43,10 @@ li {
 
 header {
   background: rgba(0, 0, 0, 0.1);
-  width: 100%;
-  border-bottom: 1px dashed #b5e853;
+  width: 90%;
+  border-bottom: 1px solid #b5e853;
   padding: 10px 0;
-  margin: 0 0 20px 0;
+  margin: 0 auto;
 }
 
 header h1 {
@@ -66,6 +72,23 @@ header h2 {
   font-size: 18px;
   font-weight: 300;
   color: #666;
+}
+
+div.listmeta {
+  padding-top: 20px;
+  font-size: 19px;
+  line-height: 1.5;
+  text-align: left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba(181, 232, 83, 0.1),
+               0 0 10px rgba(181, 232, 83, 0.1);
+  font-family: Palatino, Georgia, Times, serif;
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+div.summary {
+  margin-left: 30%;
 }
 
 #downloads .btn {
@@ -122,6 +145,13 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #999;
   margin: 0 0 5px 0;
+}
+
+header.sum {
+  background: rgba(0, 0, 0, 0.1);
+  width: 90%;
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
 dt {
@@ -227,8 +257,12 @@ hr {
 */
 
 a {
-  color: #63c0f5;
   text-shadow: 0 0 5px rgba(104, 182, 255, 0.5);
+}
+
+a:hover{
+  cursor: pointer;
+  color: #63c0f5;
 }
 
 /* Clearfix */
